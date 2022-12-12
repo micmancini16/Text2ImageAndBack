@@ -3,6 +3,9 @@ pandas
 tensorflow
 torch
 transformers
+datasets
+opencv-python-headless
+scikit-learn
 matplotlib
 imageio
 sentencepiece

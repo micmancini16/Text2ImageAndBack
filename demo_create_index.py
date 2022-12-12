@@ -19,12 +19,12 @@ else:
     index = Index.load_from_path('data/fashion-products.pickle', distance_metric='cosine')
 
 
-if not os.path.exists('data/oxford-pets.pickle'):
-    dataset = load_dataset("pcuenq/oxford-pets", split='train')
-    indexer = Indexer(model)
-    images = dataset['image']
-    ids = [str(x) for x in np.arange(len(dataset))]
-    indexer.create(images = images, image_ids=ids, name='oxford-pets', destination_dir='data')
-else:
-    print("Index already computed...")
-    index = Index.load_from_path('data/oxford-pets.pickle', distance_metric='cosine')
+# if not os.path.exists('data/oxford-pets.pickle'):
+#     dataset = load_dataset("pcuenq/oxford-pets", split='train')
+#     indexer = Indexer(model)
+#     images = dataset['image']
+#     ids = [str(x) for x in np.arange(len(dataset))]
+#     indexer.create(images = images, image_ids=ids, name='oxford-pets', destination_dir='data')
+# else:
+#     print("Index already computed...")
+#     index = Index.load_from_path('data/oxford-pets.pickle', distance_metric='cosine')
